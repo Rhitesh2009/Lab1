@@ -10,7 +10,6 @@ CREATE TABLE Readers (
 );
 
 CREATE TABLE Fines (
-    fine_id SERIAL PRIMARY KEY,
     reader_id INTEGER NOT NULL,
     return_date DATE NOT NULL,
     status VARCHAR(20) NOT NULL,
